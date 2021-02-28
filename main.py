@@ -1,5 +1,5 @@
 from db import *
-from gui import *
+from gui_audiencias import *
 
 if __name__ == '__main__':
     
