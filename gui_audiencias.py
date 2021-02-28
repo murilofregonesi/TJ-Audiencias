@@ -50,13 +50,13 @@ class WindowAudiencias(QWidget):
             filter_button.setIcon(QIcon('./static/{}'.format(icon)))
             filter_button.resize(40, 40)
             filter_button.move(x, y_btn_gap + y_btn_step * 3.5)
-            filter_button.setIconSize(QSize(25, 25) )
+            filter_button.setIconSize(QSize(30, 30) )
             return filter_button
 
         self.btn_filter_vara = create_filter_button(self, self.on_click_filter_vara, 
-            'filter.png', 'Filtrar Audiências pela Vara.', 300)
+            'filter_vara.png', 'Filtrar Audiências pela Vara.', 300)
         self.btn_filter_date = create_filter_button(self, self.on_click_filter_date, 
-            'filter.png', 'Filtrar Audiências por data da Audiência.', 350)
+            'filter_data.png', 'Filtrar Audiências por data da Audiência.', 350)
         self.btn_remove_filter_date = create_filter_button(self, self.on_click_remove_filters, 
             'rm_filter.png', 'Remover filtros das Audiências.', 400)
 
